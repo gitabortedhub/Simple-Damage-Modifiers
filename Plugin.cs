@@ -40,7 +40,7 @@ namespace Simple_Damage_Modifiers
             DamageModifierDurability = Config.Bind<float>("General",
                                          "Armor Durability Damage Modifier",
                                          1f,
-                                         "Damage received by armor");
+                                         "Durability damage received by armor");
             // Plugin startup logic
             Logger = base.Logger;
             Logger.LogInfo($"Plugin {MyPluginInfo.PLUGIN_GUID} is loaded!");
