@@ -56,10 +56,6 @@ namespace Simple_Damage_Modifiers
                     damage *= Plugin.DamageModifierHead.Value;
                 }
             }
-            if (damageInfo.DamageType == EDamageType.Explosion)
-            {
-                damage *= Plugin.DamageModifierExplosive.Value;
-            }
         }
     }
 }

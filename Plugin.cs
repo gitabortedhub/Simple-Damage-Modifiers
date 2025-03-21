@@ -12,7 +12,6 @@ namespace Simple_Damage_Modifiers
         internal static ConfigEntry<float> DamageModifierGeneral { get; set; }
         internal static ConfigEntry<float> DamageModifierBallistic { get; set; }
         internal static ConfigEntry<float> DamageModifierHead { get; set; }
-        internal static ConfigEntry<float> DamageModifierExplosive { get; set; }
         internal static ConfigEntry<float> DamageModifierDurability { get; set; }
 
         private void Awake()
@@ -33,10 +32,6 @@ namespace Simple_Damage_Modifiers
                                          "Ballistic Damage Modifier (Head)",
                                          1f,
                                          "Extra ballistic damage modifier applied to head");
-            DamageModifierExplosive = Config.Bind<float>("General",
-                                         "Explosive Damage Modifier",
-                                         1f,
-                                         "Explosive damage sources");
             DamageModifierDurability = Config.Bind<float>("General",
                                          "Armor Durability Damage Modifier",
                                          1f,
